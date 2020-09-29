@@ -20,7 +20,7 @@ root
 │   |      flash.jpg
 │   |   
 │   └─── js
-|		   index.js
+|          index.js
 |   
 └─── releases
         SSTimer_1.0.0-apk

@@ -2,7 +2,7 @@
 document.addEventListener('deviceready', onDeviceReady, false);
 
 // FlashCD vars (seconds)
-var flashBaseCd = 10;
+var flashBaseCd = (5 * 60) - 5; // -5s to adjust clicking delay
 var bootsReduction = 10;
 var inspirationReduction = 5;
 
@@ -202,7 +202,7 @@ function _addRunningClass(element) {
 }
 
 function _removeRunningClass(element) {
-    element.classList.remove('running');
+    element.firstElementChild.classList.remove('running');
 }
 
 function _getFlashCd(position) {
